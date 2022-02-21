@@ -10,8 +10,7 @@ def start(argv=[], *a, **kw):
 		return remote(sys.argv[1], sys.argv[2], *a, **kw)
 	else:
 		return process([exe] + argv, *a, **kw)
-		
-		
+				
 gdbscript = '''
 init-peda
 b main
