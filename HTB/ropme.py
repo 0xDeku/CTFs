@@ -1,5 +1,4 @@
 from pwn import *
-import time
 
 #Debug useage - python3 GDB
 #Remote usage - python3 REMOTE <IP> <PORT>
@@ -17,8 +16,6 @@ gdbscript = '''
 init-peda
 b main
 c
-
-
 '''.format(**locals())
 
 exe = "./ropme"
