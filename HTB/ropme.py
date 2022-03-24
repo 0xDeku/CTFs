@@ -1,7 +1,7 @@
 from pwn import *
 
-#Debug useage - python3 GDB
-#Remote usage - python3 REMOTE <IP> <PORT>
+#Debug useage - python3 ropme.py GDB
+#Remote usage - python3 ropme.py REMOTE <IP> <PORT>
 
 def start(argv=[], *a, **kw):
 	if args.GDB:
